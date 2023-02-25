@@ -40,20 +40,13 @@ function render(variables = {}) {
           <h3>${variables.city ? variables.city : ""}, ${
     variables.country ? variables.country : ""
   }</h3>
-          <ul class="${variables.socialMediaPosition}">
-          <li><a href="https://twitter.com/${
-            variables.twitter ? variables.twitter : "4geeksacademy"
-          }"<i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/EffySolorzano"${
-              variables.github ? variables.github : "4geeksacademy"
-            }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/stephanie-sol%C3%B3rzano-94a846146/"${
-              variables.linkedin ? variables.linkedin : "4geeksacademy"
-            }><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/cocuymami/"${
-              variables.instagram ? variables.instagram : "4geeksacademy"
-            }><i class="fab fa-instagram"></i></a></li>
-          </ul>
+
+  <ul class="${variables.socialMediaPosition}">
+  <li><a href="https://twitter.com/${variables.twitter ? variables.twitter : '4geeksacademy'}"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://github.com/${variables.github ? variables.github : 'EffySolorzano'}"><i class="fab fa-github"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/stephanie-sol%C3%B3rzano-94a846146/${variables.linkedin ? variables.linkedin : '4geeksacademy'}"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="https://www.instagram.com/cocuymami/${variables.instagram ? variables.instagram : '4geeksacademy'}"><i class="fab fa-instagram"></i></a></li>
+</ul>
         </div>
     `;
 }
